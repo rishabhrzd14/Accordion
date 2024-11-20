@@ -1,0 +1,62 @@
+/* Accordion container */
+.accordion {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+/* Header of the Accordion */
+.accordion h1 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* Accordion item header (title + icon) */
+.accordion__data {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background-color: #f7f7f7;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* Accordion item hover effect */
+.accordion__data:hover {
+  background-color: #e0e0e0;
+}
+
+/* Icon inside the accordion item */
+.accordion__data span {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Accordion content (initially hidden) */
+.answer {
+  padding: 10px 15px;
+  background-color: #fff9f9;
+  color: red;
+}
+
+/* Show the answer when the item is selected */
+.answer.active {
+  display: block; /* Show content when active */
+}
+.wrapper {
+  padding: 10px 20px;
+}
+
+.wrapper.btn {
+  background: #000;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  cursor: pointer;
+}
